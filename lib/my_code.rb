@@ -19,15 +19,13 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  if source_array.any?(false)
-    return false
-  else
+  if source_array.all?
     return true
   end
 end
 
 def reduce_to_any_true(source_array)
-  if source_array.any?(true)
+  if source_array.any?
     return true
   else
     return false
